@@ -14,5 +14,9 @@
   "type": "module",
   "workspaces": [
     "src/whale-watcher-frontend"
-  ]
+  ],
+  "dependencies": {
+    "@dfinity/auth-client": "^2.1.3",
+    "lucide-react": "^0.456.0"
+  }
 }
