@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "whale-watcher-backend": {
+      "main": "src/whale-watcher-backend/main.mo",
+      "type": "motoko"
+    },
+    "whale-watcher-frontend": {
+      "dependencies": [
+        "whale-watcher-backend"
+      ],
+      "source": [
+        "src/whale-watcher-frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "whale-watcher-frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
